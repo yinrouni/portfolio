@@ -1,7 +1,7 @@
 <template>
   <div>
   <el-tabs v-model="activeName" @tab-click="handleClick">
-    <el-tab-pane label="INTRO" name="first"></el-tab-pane>
+    <el-tab-pane label="INTRO" name="first"><Intro/></el-tab-pane>
     <el-tab-pane label="ABOUT" name="second"></el-tab-pane>
     <el-tab-pane label="EDUCATION" name="third"></el-tab-pane>
     <el-tab-pane label="PROJECTS" name="fourth"></el-tab-pane>
@@ -10,7 +10,9 @@
   </div>
 </template>
 <script>
+import Intro from './Intro'
 export default {
+  components: {Intro},
   data () {
     return {
       activeName: 'second'
