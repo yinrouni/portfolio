@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <img :src="bgImage"/>
+    <img :src="bgImage" style="width: 100%; height: 100%"/>
 
     <div class="name">
       <h1 style="font-size: 3em">Rouni Yin </h1>
@@ -22,6 +22,7 @@ export default {
 </script>
 
 <style scoped>
+  @import "../assets/style.css";
   .name{
     color: white;
     position: absolute;
