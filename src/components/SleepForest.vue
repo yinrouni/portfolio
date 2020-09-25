@@ -2,9 +2,9 @@
   <el-row :gutter="20">
     <el-col :span="8">
       <div class="block">
-        <el-carousel height="500px" direction="vertical" :autoplay="false">
+        <el-carousel height="500px" :autoplay="false">
           <el-carousel-item v-for="item in 5" :key="item">
-            <img :src="item | concatenate" style="height: 100%"/>
+            <img :src="item | concatenate('sleepForest')" style="height: 100%"/>
           </el-carousel-item>
         </el-carousel>
       </div>
@@ -30,7 +30,7 @@
       <br/>
       <br/>
 
-      <el-button type="primary" plain @click="redirect">Github
+      <el-button type="primary" plain @click="redirect('https://github.com/yinrouni/Sleep-Forest')">Github
       </el-button>
     </el-col>
   </el-row>
@@ -38,19 +38,10 @@
 </template>
 
 <script>
+import projectMixin from '../mixins/project'
 export default {
   name: 'SleepForest',
-  filters: {
-    concatenate: function (n) {
-      return '../../static/sleepForest/' + n + '.png'
-    }
-
-  },
-  methods: {
-    redirect: function () {
-      window.open('https://github.com/yinrouni/Sleep-Forest', 'blank')
-    }
-  }
+  mixins: [projectMixin]
 }
 </script>
 

@@ -10,9 +10,11 @@
           <el-tab-pane label="Sleep Forest" name="first">
             <SleepForest/>
           </el-tab-pane>
-          <el-tab-pane label="配置管理" name="second">配置管理</el-tab-pane>
+          <el-tab-pane label="Popo" name="second">Popo</el-tab-pane>
           <el-tab-pane label="角色管理" name="third">角色管理</el-tab-pane>
-          <el-tab-pane label="定时任务补偿" name="fourth">定时任务补偿</el-tab-pane>
+          <el-tab-pane label="Image Processor" name="fourth">
+            <ImageProcessor />
+          </el-tab-pane>
         </el-tabs>
     </div>
   </div>
@@ -21,9 +23,10 @@
 
 <script>
 import SleepForest from './SleepForest'
+import ImageProcessor from './ImageProcessor'
 export default {
   name: 'Projects',
-  components: {SleepForest},
+  components: {ImageProcessor, SleepForest},
   data () {
     return {
       activeName: 'first'
