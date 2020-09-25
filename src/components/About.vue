@@ -1,6 +1,13 @@
 <template>
 <div class="container">
-  <img src="../../static/background.jpg" style="width: 100%; height: 100%"/>
+  <div class="header">
+    <el-divider/>
+    ABOUT
+    <el-divider/>
+    <div class="content">
+
+    </div>
+  </div>
 </div>
 </template>
 

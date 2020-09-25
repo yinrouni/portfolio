@@ -12,10 +12,10 @@
   </div>
   <div>
     <div class="line"></div>
-    <Intro id="page1"/>
-    <About id="page2"/>
-    <Education id="page3"/>
-    <Projects id="page4"/>
+    <Intro id="page1" class="item-content"/>
+    <About id="page2" class="item-content"/>
+    <Education id="page3" class="item-content"/>
+    <Projects id="page4" class="item-content"/>
 
   </div>
   </div>
@@ -30,10 +30,32 @@ export default {
   components: {Projects, Education, About, Intro},
   data () {
     return {
-      activeIndex: '1'
+      activeIndex: '1',
+      arrDom: [],
+      headerFixed: false
     }
   },
+  mounted () {
+    this.arrDom = document.getElementsByClassName('item-content')
+    window.addEventListener('scroll', this.handleScroll)
+  },
+
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
   methods: {
+    handleScroll () {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+      for (let i = 0; i < this.arrDom.length; i++) {
+        if (this.arrDom[this.arrDom.length - 1].offsetTop - scrollTop > 760) {
+          if (this.arrDom[i].offsetTop - scrollTop <= 760 && this.arrDom[i + 1].offsetTop - scrollTop > 760) {
+            this.activeIndex = (i + 1) + ''
+          }
+        } else {
+          this.activeIndex = this.arrDom.length + ''
+        }
+      }
+    },
     handleSelect (key, keyPath) {
       this.activeIndex = key
       let pageId = document.querySelector('#page' + key)
