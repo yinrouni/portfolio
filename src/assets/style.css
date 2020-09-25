@@ -4,7 +4,7 @@
   margin: 6px;
 }
 .header{
-  width: min-content;
+  width: fit-content;
   margin: auto;
   font-size: 2em;
   font-weight: bold;

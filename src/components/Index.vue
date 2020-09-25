@@ -16,6 +16,8 @@
     <About id="page2" class="item-content"/>
     <Education id="page3" class="item-content"/>
     <Projects id="page4" class="item-content"/>
+    <Contact id="page5" class="item-content"/>
+
 
   </div>
   </div>
@@ -26,8 +28,9 @@ import Intro from './Intro'
 import About from './About'
 import Education from './Education'
 import Projects from './Projects'
+import Contact from './Contact'
 export default {
-  components: {Projects, Education, About, Intro},
+  components: {Contact, Projects, Education, About, Intro},
   data () {
     return {
       activeIndex: '1',
