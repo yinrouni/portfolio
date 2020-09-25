@@ -8,7 +8,7 @@
     <div class="content">
       <p>Feel free to drop a message</p>
       <el-button type="primary" plain>
-        Send Email
+        <a href="mailto:yin.ro@northeastern.edu" style="text-decoration:none; color:inherit;"> Send Email</a>
       </el-button>
 
       <br/>
