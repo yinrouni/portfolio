@@ -15,6 +15,7 @@
     <Intro id="page1"/>
     <About id="page2"/>
     <Education id="page3"/>
+    <Projects id="page4"/>
 
   </div>
   </div>
@@ -24,8 +25,9 @@
 import Intro from './Intro'
 import About from './About'
 import Education from './Education'
+import Projects from './Projects'
 export default {
-  components: {Education, About, Intro},
+  components: {Projects, Education, About, Intro},
   data () {
     return {
       activeIndex: '1'
@@ -56,5 +58,6 @@ export default {
     left: 0;
     width: 100%;
     background: white;
+    z-index: 2;
   }
 </style>

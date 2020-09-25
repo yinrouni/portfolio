@@ -6,20 +6,21 @@
       <el-divider/>
     </div>
 
+    <div class="content">
     <el-timeline>
-      <el-timeline-item color="#409EFF">
+      <el-timeline-item type="primary" size="large" icon="el-icon-check">
         <el-card>
           <h4>更新 Github 模板</h4>
           <p>王小虎 提交于 2018/4/12 20:46</p>
         </el-card>
       </el-timeline-item>
-      <el-timeline-item color="#409EFF">
+      <el-timeline-item type="primary" size="large">
         <el-card>
           <h4>更新 Github 模板</h4>
           <p>王小虎 提交于 2018/4/3 20:46</p>
         </el-card>
       </el-timeline-item>
-      <el-timeline-item color="#409EFF" icon="el-icon-check">
+      <el-timeline-item type="primary" size="large">
         <el-card>
           <h4>更新 Github 模板</h4>
           <p>王小虎 提交于 2018/4/2 20:46</p>
@@ -27,6 +28,7 @@
       </el-timeline-item>
     </el-timeline>
     </div>
+  </div>
 
 </template>
 
@@ -38,5 +40,9 @@ export default {
 
 <style scoped>
   @import "../assets/style.css";
+  .content{
+    width: 80%;
+    margin: auto;
+  }
 
 </style>
