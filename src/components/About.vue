@@ -80,12 +80,12 @@
 </template>
 
 <script>
-  import projectMixins from '../mixins/project'
-  export default {
-    name: 'About',
-    mixins:[projectMixins]
+import projectMixins from '../mixins/project'
+export default {
+  name: 'About',
+  mixins: [projectMixins]
 
-  }
+}
 </script>
 
 <style scoped>
