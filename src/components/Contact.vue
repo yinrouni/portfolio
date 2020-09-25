@@ -33,6 +33,7 @@ export default {
   @import "../assets/style.css";
   .icon{
     width: 50px;
+    margin-left: 10px;
   }
 
 </style>
