@@ -35,5 +35,8 @@ export default {
     width: 50px;
     margin-left: 10px;
   }
+  .container{
+    height: 500px;
+  }
 
 </style>

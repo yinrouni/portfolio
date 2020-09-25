@@ -11,13 +11,11 @@
     </el-menu>
   </div>
   <div>
-    <div class="line"></div>
     <Intro id="page1" class="item-content"/>
     <About id="page2" class="item-content"/>
     <Education id="page3" class="item-content"/>
     <Projects id="page4" class="item-content"/>
     <Contact id="page5" class="item-content"/>
-
 
   </div>
   </div>
