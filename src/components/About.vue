@@ -32,7 +32,7 @@
               where I will have more opportunities to solve technical problems with what I’m learning in my program.
             </p>
 
-            <el-button plain type="primary" @click="redirect('../../static/Rouni Yin(resume1).pdf')">
+            <el-button plain type="primary" @click="redirect('./../assets/Rouni Yin(resume1).pdf')">
               Resume
             </el-button>
           </div>

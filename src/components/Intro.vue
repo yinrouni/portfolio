@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <img :src="bgImage" style="width: 100%; height: 100%"/>
+    <img src="./../assets/background.jpg" style="width: 100%; height: 100%"/>
 
     <div class="name">
       <h1 style="font-size: 3em">Rouni Yin </h1>
@@ -12,12 +12,7 @@
 
 <script>
 export default {
-  name: 'Intro',
-  data () {
-    return {
-      bgImage: '../../static/background.jpg'
-    }
-  }
+  name: 'Intro'
 }
 </script>
 

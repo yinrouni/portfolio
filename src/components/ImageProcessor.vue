@@ -4,7 +4,7 @@
       <el-col :span="8">
       <el-carousel height="500px" :autoplay="false">
         <el-carousel-item v-for="item in 4" :key="item">
-          <img :src="item | concatenate('ImageProcessor')" style="height: 100%"/>
+          <img :src="format('ImageProcessor',item)" style="height: 100%"/>
         </el-carousel-item>
       </el-carousel>
       </el-col>

@@ -4,7 +4,7 @@
       <div class="block">
         <el-carousel height="500px" :autoplay="false">
           <el-carousel-item v-for="item in 5" :key="item">
-            <img :src="item | concatenate('sleepForest')" style="height: 100%"/>
+            <img :src="format('sleepForest',item)" style="height: 100%"/>
           </el-carousel-item>
         </el-carousel>
       </div>

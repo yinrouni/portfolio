@@ -15,8 +15,8 @@
       <br/>
 
       <p> Connect with me</p>
-      <img class="icon" src="../../static/icon/github.png" @click="redirect('https://github.com/yinrouni')"/>
-      <img class="icon" src="../../static/icon/linkedin.png" @click="redirect('https://www.linkedin.com/in/rouni-yin-86bb11189/')"/>
+      <img class="icon" src="./../assets/icon/github.png" @click="redirect('https://github.com/yinrouni')"/>
+      <img class="icon" src="./../assets/icon/linkedin.png" @click="redirect('https://www.linkedin.com/in/rouni-yin-86bb11189/')"/>
 
     </div>
   </div>
