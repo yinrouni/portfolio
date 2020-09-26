@@ -32,7 +32,7 @@
               where I will have more opportunities to solve technical problems with what I’m learning in my program.
             </p>
 
-            <el-button plain type="primary" @click="redirect('./../assets/Rouni Yin(resume1).pdf')">
+            <el-button plain type="primary" @click="goResume">
               Resume
             </el-button>
           </div>
@@ -83,7 +83,12 @@
 import projectMixins from '../mixins/project'
 export default {
   name: 'About',
-  mixins: [projectMixins]
+  mixins: [projectMixins],
+  methods: {
+    goResume: function() {
+      window.open(`../../static/Rouni Yin(resume1).pdf`, 'blank')
+    }
+  }
 
 }
 </script>
