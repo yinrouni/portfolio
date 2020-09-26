@@ -5,8 +5,9 @@
       <el-menu-item index="1">INTRO</el-menu-item>
       <el-menu-item index="2">ABOUT</el-menu-item>
       <el-menu-item index="3" >EDUCATION</el-menu-item>
-      <el-menu-item index="4">PROJECTS</el-menu-item>
-      <el-menu-item index="5">CONTACT</el-menu-item>
+      <el-menu-item index="4">INTERNSHIP</el-menu-item>
+      <el-menu-item index="5">PROJECTS</el-menu-item>
+      <el-menu-item index="6">CONTACT</el-menu-item>
 
     </el-menu>
   </div>
@@ -14,9 +15,9 @@
     <Intro id="page1" class="item-content"/>
     <About id="page2" class="item-content"/>
     <Education id="page3" class="item-content"/>
-    <Projects id="page4" class="item-content"/>
-    <Contact id="page5" class="item-content"/>
-
+    <Internship id="page4" class="item-content"/>
+    <Projects id="page5" class="item-content"/>
+    <Contact id="page6" class="item-content"/>
   </div>
   </div>
 </template>
@@ -27,8 +28,9 @@ import About from './About'
 import Education from './Education'
 import Projects from './Projects'
 import Contact from './Contact'
+import Internship from './Internship'
 export default {
-  components: {Contact, Projects, Education, About, Intro},
+  components: {Internship, Contact, Projects, Education, About, Intro},
   data () {
     return {
       activeIndex: '1',
@@ -81,6 +83,6 @@ export default {
     left: 0;
     width: 100%;
     background: white;
-    z-index: 2;
+    z-index: 5;
   }
 </style>

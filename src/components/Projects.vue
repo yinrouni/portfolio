@@ -11,7 +11,7 @@
             <SleepForest/>
           </el-tab-pane>
           <el-tab-pane label="Popo" name="second">Popo</el-tab-pane>
-          <el-tab-pane label="角色管理" name="third">角色管理</el-tab-pane>
+          <el-tab-pane label="Streamer Survival Guide" name="third">Streamer Survival Guide</el-tab-pane>
           <el-tab-pane label="Image Processor" name="fourth">
             <ImageProcessor />
           </el-tab-pane>
