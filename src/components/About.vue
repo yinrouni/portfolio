@@ -85,8 +85,8 @@ export default {
   name: 'About',
   mixins: [projectMixins],
   methods: {
-    goResume: function() {
-      window.open(`../static/Rouni Yin(resume1).pdf`, 'blank')
+    goResume: function () {
+      window.open(`./static/Rouni Yin(resume1).pdf`, 'blank')
     }
   }
 
