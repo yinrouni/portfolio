@@ -89,7 +89,7 @@
                   <span class="date"> Dec.2016 – Jun.2017</span></el-col>
                 <el-col :span="16">
                   <div class="logo">
-                    <p class="company">Sichuan Quanshi Infrared Technology Co., Ltd</p>
+                    <span class="company">Sichuan Quanshi Infrared Technology Co., Ltd</span>
                   </div>
                 </el-col>
 
