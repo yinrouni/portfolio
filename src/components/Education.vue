@@ -36,7 +36,7 @@
             </el-col>
             <el-col :span="12">
               <p> GPA 3.9/4.0</p>
-              <p><span style="font-weight: bold">Related Courses:</span> Calculus, Algebra,
+              <p><span style="font-weight: bold">Related Courses:</span> Calculus, Linear Algebra,
                 Probability Statistics, Programming in C, MATLAB,  Discrete Math</p>
             </el-col>
           </el-row>
