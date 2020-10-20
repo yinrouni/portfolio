@@ -87,7 +87,7 @@ export default {
   methods: {
     goResume: function () {
       if (process.env.NODE_ENV === 'production') {
-        window.open(`./portfolio/static/Rouni Yin(resume1).pdf`, 'blank')
+        window.open(`./static/Rouni Yin(resume1).pdf`, 'blank')
       } else {
         window.open(`../../static/Rouni Yin(resume1).pdf`, 'blank')
       }
